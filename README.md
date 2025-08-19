@@ -14,7 +14,7 @@ Podman (**Pod Manager**) adalah _container engine_ mirip **Docker** tetapi:
 
 ---
 
-## 🔹 Instalasi Podman
+## 🔹 Tutorial Dan Instalasi Podman
 
 ### Ubuntu / Debian
 
@@ -48,3 +48,29 @@ brew install podman
    podman machine init
    podman machine start
    ```
+## 🔹 Cek versi
+```
+podman --version
+```
+## 🔹 Menjalankan Container
+```
+podman run -d -p 8080:80 nginx
+```
+## 🔹 Melihat Container
+```
+podman ps
+podman ps -a  
+```
+## 🔹 Menghentikan & Menghapus Container
+```
+podman stop <container_id>
+podman rm <container_id>
+```
+## 🔹 Build Image dengan Podman
+```
+podman build -t myapp .
+podman run -d -p 5000:5000 myapp
+
+```
+
+
