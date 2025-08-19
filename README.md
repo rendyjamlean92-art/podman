@@ -2,6 +2,10 @@
 
 ## 🔹 Apa itu Podman?
 
+Podman (Pod Manager) adalah sebuah container engine open-source yang digunakan untuk membuat, mengelola, dan menjalankan container serta pod. Podman memiliki fungsi yang mirip dengan Docker, namun dengan keunggulan utama yaitu bersifat daemonless (tidak membutuhkan daemon yang berjalan di background) dan mendukung mode rootless, sehingga container dapat dijalankan tanpa hak akses root. Hal ini membuat Podman lebih aman serta fleksibel digunakan di berbagai sistem operasi, termasuk Linux, macOS, dan Windows.
+
+Selain itu, Podman memiliki integrasi konsep pod secara bawaan, mirip dengan Kubernetes, di mana beberapa container dapat berjalan dalam satu lingkungan jaringan yang sama. Perintah Podman juga kompatibel dengan perintah Docker, sehingga pengguna yang terbiasa dengan Docker dapat dengan mudah beralih tanpa banyak penyesuaian. Karena sifatnya yang ringan, aman, dan mendukung arsitektur mirip Kubernetes, Podman banyak digunakan untuk pengembangan, pengujian, hingga implementasi aplikasi berbasis container di lingkungan produksi.
+
 Podman (**Pod Manager**) adalah _container engine_ mirip **Docker** tetapi:
 
 - Tidak membutuhkan **daemon** (lebih ringan).
